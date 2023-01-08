@@ -2,27 +2,27 @@
 
 1] Requirements:
 
-> Web Server with Nginx (Front-End).
-> Application Server with a Java Service on Tomcat (Back-End).
-> Database Server with Postgres (DB).
+> Web Server with Nginx (Front-End)
+> Application Server with a Java Service on Tomcat (Back-End)
+> Database Server with Postgres (DB)
 
 2] To Do:
 > Architecture Diagram and Terraform Code.
 
 3] Formulation of Resources:
 
-> VPC (Customised).
+> VPC (Customised):
       > 01 Subnet (Public) - Web Server
       > 02 Subnets (Private) - Application & DB Server
 
-> 03 EC2 Instances (Web, App and DB).
+> 03 EC2 Instances (Web, App and DB):
       > Security Groups
       > Elastic IP
       > NAT Gateway (For Private Subnets) & Internet Gateway (For Public Subnet)
       > Route Table Configuration
       > Application Load Balancer
 
-> Installation within Servers.
+> Installation within Servers:
       > Nginx (Installed On Web Server)
       > Java and Tomcat (Installed On App Server)
       > PostgreSQL (Installed On DB Server)
