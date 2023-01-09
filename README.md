@@ -3,7 +3,9 @@
 1] Requirements:
 
 > Web Server with Nginx (Front-End)
+
 > Application Server with a Java Service on Tomcat (Back-End)
+
 > Database Server with Postgres (DB)
 
 2] To Do:
