@@ -49,7 +49,7 @@ resource "aws_network_acl" "main" {
     from_port  = 443
     to_port    = 443
   }
-  egress {  //Ephemeral Port
+  egress {  # Ephemeral Port
     protocol   = "tcp"
     rule_no    = 300
     action     = "allow"
