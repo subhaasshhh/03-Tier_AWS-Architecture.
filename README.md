@@ -46,4 +46,4 @@
 For More Detailed Overview, Please Check the Diagrammatic Representation.
 
 
-![image](https://user-images.githubusercontent.com/51474678/211479753-a1f5a880-c2b2-4c2b-97f3-26d08278f2f8.png)
+![image](https://user-images.githubusercontent.com/51474678/211479958-f155337b-5ccb-453e-8344-b44935b8fb82.png)
