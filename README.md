@@ -1,47 +1,47 @@
 03 - Tier System Architecture.
 
-1] Requirements:
+1] REQs:
 
-> Web Server with Nginx (Front-End)
+> WEB Server with Nginx [Front-End]
 
-> Application Server with a Java Service on Tomcat (Back-End)
+> Application Server with a Java Service On Tom-Cat [Back-End]
 
-> Database Server with Postgres (DB)
+> Database Server with Postgres [DB]
 
 2] To Do:
-> Architecture Diagram and Terraform Code.
+> Architecture Diagram & Terraform Code.
 
 3] Formulation of Resources:
 
-> VPC (Customised):
-      > 01 Subnet (Public) - Web Server
-      > 02 Subnets (Private) - Application & DB Server
+> VPC [Customised]:
+      > 01 Subnet [Public] - WEB Server
+      > 02 Subnet [Private] - APP & DB Server
 
-> 03 EC2 Instances (Web, App and DB):
-      > Security Groups
-      > Elastic IP
-      > NAT Gateway (For Private Subnets) & Internet Gateway (For Public Subnet)
+> 03 EC2 Instances [WEB, APP & DB]:
+      > Security GROUP [SGs]
+      > Elastic-IP
+      > NAT Gateway [For Private Subnet] & Internet Gateway [For Public Subnet]
       > Route Table Configuration
       > Application Load Balancer
 
-> Installation within Servers:
-      > Nginx (Installed On Web Server)
-      > Java and Tomcat (Installed On App Server)
-      > PostgreSQL (Installed On DB Server)
+> Installation Within Servers:
+      > Nginx [Installed On WEB Server]
+      > Java & Tom-Cat [Installed On APP Server]
+      > PostgreSQL [Installed On DB Server]
 
-4] Summary:
+4] Synopsis:
 
-> Creation of VPC with 03 Subnets: 01-Public Subnet which will be Exposed to the Internet and 02-Private Subnets for Internal Compute.
+> Creation of VPC with 03 Subnets: 01-Public Subnet Which Will Be Exposed to the Internet & 02-Private Subnet For Internal Compute.
 
-> Public Subnet has been Connected with Internet Gateway for Internet Connectivity whereas Private Subnets has been Configured with NAT Gateway for Internet Connectivity.
+> Public Subnet Has Been Connected with Internet Gateway For Internet Connectivity & Private Subnet Has Been Configured with NAT Gateway For Internet Connectivity.
 
-> The Public Subnet consists of one Instance as “Web Server” with Nginx Installed During Launch Itself.
+> The Public Subnet Consist of One Instance as “WEB Server” with Nginx Installed During Launch Itself.
 
-> The Private Subnets have been assigned to 02 Instances namely, Application Server and DB Server consisting of Java and PostgreSQL respectively.
+> The Private Subnet Have Been Assigned to 02 Instances Namely, APP Server & DB Server consisting of Java & PostgreSQL Respectively.
 
-> Only Web Server is Exposed to the Internet, and the Private Servers have been configured in such a way that it can be accessed through Web-Server only using “ssh”.
+> Only WEB Server Is Exposed to the Internet, & the Private Server Have Been Configured In Such a Way that It Can Be Accessed through WEB-Server Only Using “ssh”.
 
-> Moreover, a Jump Host (Jump Server) can be configured for Enhanced Connectivity and Diminishing unwanted Load on Web Server for Connections to Application and DB Server.
+> Moreover, a Jump Host [Jump Server] Can Be Configured For Enhanced Connectivity & Diminishing Extra Load on WEB Server For Connections to Application & DB Server.
 
 For More Detailed Overview, Please Check the Diagrammatic Representation.
 
