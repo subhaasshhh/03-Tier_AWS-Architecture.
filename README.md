@@ -1,15 +1,15 @@
 03 - Tier System Architecture.
 
-1] REQs:
+1] REQ(s):
 
-> WEB Server with Nginx [Front-End]
+> WEB Server With Nginx [Front-End]
 
-> Application Server with a Java Service On Tom-Cat [Back-End]
+> Application Server With a Java Service On Tom-Cat [Back-End]
 
-> Database Server with Postgres [DB]
+> Database Server With Postgres [DB]
 
 2] To Do:
-> Architecture Diagram & Terraform Code.
+> Architecture Diagram & Terraform Code
 
 3] Formulation of Resources:
 
@@ -18,30 +18,30 @@
       > 02 Subnet [Private] - APP & DB Server
 
 > 03 EC2 Instances [WEB, APP & DB]:
-      > Security GROUP [SGs]
+      > Security GROUP [SG]
       > Elastic-IP
-      > NAT Gateway [For Private Subnet] & Internet Gateway [For Public Subnet]
+      > NAT [Using for Private Subnet] & Internet [Using for Public Subnet]
       > Route Table Configuration
       > Application Load Balancer
 
-> Installation Within Servers:
+> Installation Within Server(s):
       > Nginx [Installed On WEB Server]
       > Java & Tom-Cat [Installed On APP Server]
       > PostgreSQL [Installed On DB Server]
 
 4] Synopsis:
 
-> Creation of VPC with 03 Subnets: 01-Public Subnet Which Will Be Exposed to the Internet & 02-Private Subnet For Internal Compute.
+> Creation of VPC With 03 Subnet(s): 01-Public Subnet Which Will Be Exposed to Internet & 02-Private Subnet for Internal Compute.
 
-> Public Subnet Has Been Connected with Internet Gateway For Internet Connectivity & Private Subnet Has Been Configured with NAT Gateway For Internet Connectivity.
+> Public Subnet Has Been Connected With Internet GW for Internet Connectivity & Private Subnet Has Been Configured With NAT GW for Internet Connectivity.
 
-> The Public Subnet Consist of One Instance as “WEB Server” with Nginx Installed During Launch Itself.
+> The Public Subnet Consist of One Instance as “WEB Server” With Nginx Installed During Launch Itself.
 
-> The Private Subnet Have Been Assigned to 02 Instances Namely, APP Server & DB Server consisting of Java & PostgreSQL Respectively.
+> The Private Subnet Have Been Assigned to 02 Instances Namely, APP Server & DB Server Consisting of Java & PostgreSQL Respectively.
 
-> Only WEB Server Is Exposed to the Internet, & the Private Server Have Been Configured In Such a Way that It Can Be Accessed through WEB-Server Only Using “ssh”.
+> Only WEB Server Is Exposed to Internet, & the Private Server Have Been Configured In Such a Way That It Can Be Accessed Through WEB-Server Only Using “ssh”.
 
-> Moreover, a Jump Host [Jump Server] Can Be Configured For Enhanced Connectivity & Diminishing Extra Load on WEB Server For Connections to Application & DB Server.
+> Also, a Jump Host [Jump Server] Can Be Configured for Enhanced Connectivity & Diminishing Extra Load On WEB Server for Connections to Application & DB Server.
 
 For More Detailed Overview, Please Check the Diagrammatic Representation.
 
