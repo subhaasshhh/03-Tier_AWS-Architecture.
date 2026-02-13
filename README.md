@@ -14,19 +14,19 @@
 3] Formulation of Resource(s):
 
 > VPC [Customised]:
-      > 01 SUBNET [Public] - WEB Server.
+      > 01 SUBNET [Public] - WEB Server
       > 02 SUBNET [Private] - APP & DB Server.
 
 > 03 EC2 Instance(s) [WEB, APP & DB]:
-      > Security GROUP [SG].
-      > Elastic-IP.
-      > NAT [Using for Private SUB] & Internet [Using for Public SUB].
-      > Route Table Configuration.
+      > Security GROUP [SG]
+      > Elastic-IP
+      > NAT [Using for Private SUB] & Internet [Using for Public SUB]
+      > Route Table Configuration
       > Application Load Balancer [ALB].
 
 > Installation Within Server(s):
-      > Nginx [Installed On WEB Server].
-      > Java & Tom-Cat [Installed On APP Server].
+      > Nginx [Installed On WEB Server]
+      > Java & Tom-Cat [Installed On APP Server]
       > PostgreSQL [Installed On DB Server].
 
 4] Synopsis:
